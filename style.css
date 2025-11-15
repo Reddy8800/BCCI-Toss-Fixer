@@ -3,7 +3,16 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   color: #fff;
-  background: linear-gradient(#001733, #001020);
+
+  /* Background Image */
+  background-image: url('bg.jpg');  /* make sure bg.jpg exists in folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Optional dark overlay */
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
 }
 
 .container {
