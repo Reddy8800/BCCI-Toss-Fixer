@@ -1,21 +1,13 @@
-// 3-hour countdown timer
-let time = 3 * 60 * 60; // seconds
-
-const timerDiv = document.getElementById("timer");
+// Countdown Timer (45 seconds loop)
+let time = 45;
 
 function updateTimer() {
-  let hrs = Math.floor(time / 3600);
-  let mins = Math.floor((time % 3600) / 60);
-  let secs = time % 60;
-
-  timerDiv.innerHTML =
-    `FREE JOINING ENDS IN: ${hrs.toString().padStart(2, '0')}:` +
-    `${mins.toString().padStart(2, '0')}:` +
-    `${secs.toString().padStart(2, '0')}`;
+  document.getElementById("timer").textContent = time + "s";
 
   time--;
-
-  if (time < 0) time = 3 * 3600;  // Restart automatically
+  if (time < 0) {
+    time = 45;
+  }
 }
 
 setInterval(updateTimer, 1000);

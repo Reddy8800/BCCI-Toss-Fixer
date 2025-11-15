@@ -3,52 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Landing Page</title>
+  <title>BCCI TOSS FIXER</title>
+  <link rel="stylesheet" href="style.css" />
 
   <!-- Meta Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', 'YOUR_PIXEL_ID'); 
-    fbq('track', 'PageView');
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1346211669839385');
+  fbq('track', 'PageView');
   </script>
-
-  <link rel="stylesheet" href="style.css" />
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1346211669839385&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 
 <body>
-
   <div class="container">
+    
+    <h1 class="title">BCCI TOSS FIXER</h1>
+    <p class="tagline">Best Cricket Expert → Tips, Calls & Live Analysis</p>
 
-    <h1 class="title">YOUR BRAND NAME</h1>
-
-    <div class="stats-section">
-      <div class="stat-box">
-        <h2>60</h2>
-        <p>Winning Record</p>
-      </div>
-
-      <div class="stat-box">
-        <h2>70/86</h2>
-        <p>Match Passed</p>
-      </div>
+    <div class="badge-circle">
+      <span>45s</span>
     </div>
 
-    <p class="subtitle">Daily Free Tips • 90% Accuracy • 24/7 Support</p>
+    <div class="sub-brand">BCCI TOSS FIXER</div>
 
-    <div id="timer" class="timer">FREE JOINING ENDS IN: 00:00:00</div>
+    <div class="stats">
+      <p>✔ <strong>70/86 MATCH PASSED</strong> 🏆</p>
+      <p>✔ <strong>Oldest CRICKET Tipper Since 2011</strong> 🏆</p>
+      <p>✔ <strong>44/42 BBL MATCHES PASSED</strong> 🏆</p>
+    </div>
 
-    <a href="https://t.me/yourtelegram" class="cta-btn" onclick="fbq('track', 'Lead')">
-      JOIN TELEGRAM NOW
+    <!-- CTA with LEAD TRACKING -->
+    <a href="https://t.me/+XEC2LKNIvQtiZmY9" 
+       class="cta-btn"
+       onclick="fbq('track', 'Lead');">
+      SUBSCRIBE — JOIN TELEGRAM ✈️
     </a>
 
+    <p class="timer-text">FREE JOINING ENDS IN <span id="timer">45s</span></p>
+
+    <p class="footer-text">99% Right Accuracy ke sath best result</p>
   </div>
 
   <script src="script.js"></script>
